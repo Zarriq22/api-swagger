@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  description: API sederhana untuk menunjukkan cara Swagger UI bekerja
+  version: 1.0.0
+paths:
+  /hello:
+    get:
+      summary: Hello World
+      description: Mengembalikan respon "Hello, World!".
+      responses:
+        '200':
+          description: Respon berhasil
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Hello, World!
